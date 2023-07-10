@@ -1,14 +1,17 @@
-<mat-toolbar class="max-w-7xl mx-auto border-x flex justify-between ">
-    <div>
+<mat-toolbar class="max-w-7xl mx-auto border-x flex justify-between">
+    <img class="h-10 w-auto" src="../../../assets/img/Quicker-logo.svg" alt="Your Company">
+    <div class="sm:hidden">
         <button class="mr-8 hover:bg-indigo-200" mat-icon-button aria-label="Menu icon">
             <mat-icon>menu</mat-icon>
         </button>        
     </div>
-    <div class="hidden md:flex md:flex-1">
+    <div class="hidden md:flex">
         <a class="mr-8 hover:text-indigo-700" routerLink="home">Главная</a>
         <a class="mr-8 hover:text-indigo-700" routerLink="about">О нас</a>
-        <a class="mr-8 hover:text-indigo-700" routerLink="pricing">Тарифы</a>        
+        <a class="mr-8 hover:text-indigo-700" routerLink="pricing">Тарифы</a>
+        <a class="mr-8 hover:text-indigo-700" routerLink="budget">Конфигуратор</a>
     </div>
+    
     <div>
         <a class="mr-8 hover:text-indigo-700" routerLink="login">Войти</a>
         <button class="mr-8 hover:bg-indigo-200" mat-icon-button aria-label="Menu icon">

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatMenuModule} from '@angular/material/menu';
@@ -23,6 +25,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { AboutComponent } from './components/about/about.component';
 import { LoginComponent } from './components/login/login.component';
+import { BudgetComponent } from './components/budget/budget.component';
 
 
 @NgModule({
@@ -32,7 +35,8 @@ import { LoginComponent } from './components/login/login.component';
     HomeComponent,
     PricingComponent,
     AboutComponent,
-    LoginComponent
+    LoginComponent,
+    BudgetComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +53,8 @@ import { LoginComponent } from './components/login/login.component';
     MatToolbarModule,
     MatTableModule,
     MatBadgeModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

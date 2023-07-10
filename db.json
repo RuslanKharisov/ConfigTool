@@ -1,0 +1,44 @@
+{
+    "plcModules": [
+        {
+            "id": 1,
+            "sku": "1321001600", 
+            "partNumber": "K3.DO.00.16.00",
+            "typeOfChanels":"DI",
+            "qtyOfChanels": 16,
+            "title": "DI, 16, горячая замена, резервированная системная шина, 30VDC",
+            "price": 88880.00,
+            "weight": 350
+        },
+        {
+            "id": 1,
+            "sku": "1321001600", 
+            "partNumber": "K3.DO.00.16.00",
+            "typeOfChanels":"DI",
+            "qtyOfChanels": 16,
+            "title": "DI, 16, горячая замена, резервированная системная шина, 30VDC",
+            "price": 88880.00,
+            "weight": 350
+        },
+        {
+            "id": 1,
+            "sku": "1321001600", 
+            "partNumber": "K3.DO.00.16.00",
+            "typeOfChanels":"DI",
+            "qtyOfChanels": 16,
+            "title": "DI, 16, горячая замена, резервированная системная шина, 30VDC",
+            "price": 88880.00,
+            "weight": 350
+        },
+        {
+            "id": 1,
+            "sku": "1321001600", 
+            "partNumber": "K3.DO.00.16.00",
+            "typeOfChanels":"DI",
+            "qtyOfChanels": 16,
+            "title": "DI, 16, горячая замена, резервированная системная шина, 30VDC",
+            "price": 88880.00,
+            "weight": 350
+        }
+    ]
+}
