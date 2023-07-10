@@ -1,21 +1,62 @@
-<mat-toolbar class="max-w-7xl mx-auto border-x flex justify-between">
-    <img class="h-10 w-auto" src="../../../assets/img/Quicker-logo.svg" alt="Your Company">
-    <div class="sm:hidden">
-        <button class="mr-8 hover:bg-indigo-200" mat-icon-button aria-label="Menu icon">
-            <mat-icon>menu</mat-icon>
-        </button>        
-    </div>
-    <div class="hidden md:flex">
-        <a class="mr-8 hover:text-indigo-700" routerLink="home">Главная</a>
-        <a class="mr-8 hover:text-indigo-700" routerLink="about">О нас</a>
-        <a class="mr-8 hover:text-indigo-700" routerLink="pricing">Тарифы</a>
-        <a class="mr-8 hover:text-indigo-700" routerLink="budget">Конфигуратор</a>
-    </div>
-    
-    <div>
-        <a class="mr-8 hover:text-indigo-700" routerLink="login">Войти</a>
-        <button class="mr-8 hover:bg-indigo-200" mat-icon-button aria-label="Menu icon">
-            <mat-icon>account_circle</mat-icon>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+            <img class="bi me-2" width="70" height="50" src="../../../assets/img/Quicker-logo.svg"
+                alt="Your Company" />
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav fs-6 me-auto mb-2 mb-lg-0">            
+          <li class="nav-item">
+            <a class="nav-link" routerLink="budget">Конфигуратор</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              О нас
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="about">О компании</a></li>
+              <li><a class="dropdown-item" routerLink="pricing">Тарифы</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex mb-2 mb-lg-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success me-4" type="submit">Search</button>
+        </form>
+
+        <!-- если не авторизован, то отображаем -->
+
+        <button class="btn btn-outline-primary me-2 col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" routerLink="login"
+            type="button">
+            Login
         </button>
-    </div>  
-</mat-toolbar>
+
+        <!-- если авторизован, то отображаем -->
+
+        <div class="dropdown text-end">
+            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle" />
+            </a>
+            <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">Новый расчет</a></li>
+                <li><a class="dropdown-item" href="#">Настройки</a></li>
+                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                <li>
+                    <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Выход</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
