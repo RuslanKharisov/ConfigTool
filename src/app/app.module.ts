@@ -26,6 +26,7 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { AboutComponent } from './components/about/about.component';
 import { LoginComponent } from './components/login/login.component';
 import { BudgetComponent } from './components/budget/budget.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { BudgetComponent } from './components/budget/budget.component';
     PricingComponent,
     AboutComponent,
     LoginComponent,
-    BudgetComponent
+    BudgetComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

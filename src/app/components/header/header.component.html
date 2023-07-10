@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary scrolling-navbar">
     <div class="container">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
             <img class="bi me-2" width="70" height="50" src="../../../assets/img/Quicker-logo.svg"
@@ -8,9 +8,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav fs-6 me-auto mb-2 mb-lg-0">            
+        <ul class="navbar-nav fs-6 me-auto mb-2 mb-lg-0">    
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="home">Главная</a>
+            </li>        
           <li class="nav-item">
-            <a class="nav-link" routerLink="budget">Конфигуратор</a>
+            <a class="nav-link active" routerLink="budget">Конфигуратор</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,7 +51,7 @@
                 <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle" />
             </a>
             <ul class="dropdown-menu text-small">
-                <li><a class="dropdown-item" href="#">Новый расчет</a></li>
+                <li><a class="dropdown-item" routerLink="budget">Новый расчет</a></li>
                 <li><a class="dropdown-item" href="#">Настройки</a></li>
                 <li><a class="dropdown-item" href="#">Профиль</a></li>
                 <li>

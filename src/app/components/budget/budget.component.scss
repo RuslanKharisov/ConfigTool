@@ -70,3 +70,9 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (min-width: 1200px) {
+    .budget-page{
+        padding-left: 270px;
+    }
+}
